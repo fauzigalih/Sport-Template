@@ -1,0 +1,35 @@
+@use 'color';
+
+nav.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    a.navbar-brand {
+        font-size: 1.5em;
+        font-weight: bold;
+        span {
+            border: 2px solid color.$primary-color;
+            padding: 0 5px 1px 5px;
+            background-color: transparent;
+            border-radius: 3px;
+            color: color.$primary-color;
+        }
+    }
+    #navbarResponsive {
+        ul {
+            display: flex;
+            width: 50%;
+            justify-content: space-between;
+            a.nav-link {
+                font-size: 14px;
+                color: white;
+                font-weight: 500;
+                text-transform: uppercase;
+                &.active, &:hover {
+                    color: color.$primary-color;
+                }
+            }
+        }
+    }
+}
+.home-inner {
+    background-image: url('img/computers.png') !important;
+  }
