@@ -1,7 +1,16 @@
 @use 'color';
 
+body {
+    .offset::before {
+        display: block;
+        content: '';
+        height: 3.7rem;
+        margin-top: -3.7rem;
+    }
+}
+
 nav.navbar {
-    background-color: rgba(0, 0, 0, 0.7) !important;
+    background-color: rgba(95, 95, 95, 0.7) !important;
     a.navbar-brand {
         font-size: 1.5em;
         font-weight: bold;
@@ -30,6 +39,74 @@ nav.navbar {
         }
     }
 }
-.home-inner {
-    background-image: url('img/computers.png') !important;
-  }
+
+#home {
+    .landing {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: table;
+        z-index: -1;
+        .home-wrap {
+            clip: rect(0, auto, auto, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            .home-inner {
+                position: fixed;
+                display: table;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-size: cover;
+                background-position: center center;
+                background-image: url(/img/cover.jpg);
+                filter: contrast(60%);
+            }
+        }
+    }
+    .caption {
+        width: 100%;
+        max-width: 100%;
+        position: absolute;
+        top: 38%;
+        z-index: 1;
+        color: white;
+        text-transform: uppercase;
+        h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 0.3rem;
+            text-shadow: .1rem .1rem .8rem black;
+            padding-bottom: 1rem;
+        }
+        h3 {
+            font-size: 2rem;
+            text-shadow: .1rem .1rem .5rem black;
+            padding-bottom: 1.6rem;
+            letter-spacing: .2rem;
+            margin-bottom: 2rem;
+        }
+        .btn-light {
+            font-size: 1.3rem;
+            font-weight: 500;
+            padding: 0.5rem 1.3rem;
+            border: 0.3rem solid white;
+            background-color: transparent;
+            color: white;
+            text-decoration: none;
+            letter-spacing: .1rem;
+            &:hover {
+                color: rgb(136, 136, 136);
+                background-color: white;
+            }
+        }
+    }
+}
+
+#features {
+
+}
