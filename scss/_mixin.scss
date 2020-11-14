@@ -1,0 +1,42 @@
+@use 'color';
+
+@mixin title($color: color.$primary-color) {
+    color: $color;
+    letter-spacing: 5px;
+}
+
+@mixin desc {
+    margin-top: 1em;
+    font-size: 1.1em;
+}
+
+@mixin title-desc($color: color.$primary-color) {
+    h1 {
+        @include title($color);
+    }
+    p {
+        @include desc();
+    }
+}
+
+@mixin navbar-brand() {
+    a.navbar-brand {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: white;
+        span {
+            border: 2px solid color.$primary-color;
+            padding: 0 5px 1px 5px;
+            background-color: transparent;
+            border-radius: 3px;
+            color: color.$primary-color;
+        }
+    }
+}
+
+@mixin offset {
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
