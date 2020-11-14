@@ -1,9 +1,17 @@
+.offset::before {
+  display: block;
+  content: "";
+  height: 4rem;
+  margin-top: -4rem;
+}
+
 nav.navbar {
   background-color: rgba(95, 95, 95, 0.7) !important;
 }
 nav.navbar a.navbar-brand {
   font-size: 1.5em;
   font-weight: bold;
+  color: white;
 }
 nav.navbar a.navbar-brand span {
   border: 2px solid #1ebba3;
@@ -12,16 +20,10 @@ nav.navbar a.navbar-brand span {
   border-radius: 3px;
   color: #1ebba3;
 }
-nav.navbar #navbarResponsive ul {
-  display: flex;
-  width: 50%;
-  justify-content: space-between;
-}
 nav.navbar #navbarResponsive ul a.nav-link {
   font-size: 14px;
   color: white;
   font-weight: 500;
-  text-transform: uppercase;
 }
 nav.navbar #navbarResponsive ul a.nav-link.active, nav.navbar #navbarResponsive ul a.nav-link:hover {
   color: #1ebba3;
@@ -90,6 +92,86 @@ nav.navbar #navbarResponsive ul a.nav-link.active, nav.navbar #navbarResponsive 
 #home .caption .btn-light:hover {
   color: #888888;
   background-color: white;
+}
+
+#register h1 {
+  color: #1ebba3;
+  letter-spacing: 5px;
+}
+#register p {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+#register .btn-primary-color {
+  border: 1px solid #1ebba3;
+  background-color: #1ebba3;
+  color: white;
+  padding: 0.3em 1em;
+  opacity: 0.8;
+}
+#register .btn-primary-color:hover {
+  opacity: 1;
+}
+
+#features h1 {
+  color: #1ebba3;
+  letter-spacing: 5px;
+}
+#features p {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+#features ul {
+  margin: 0;
+  padding: 0;
+}
+#features ul a {
+  font-size: 1em;
+  font-weight: 200;
+  text-decoration: none;
+  color: black;
+}
+#features ul a li {
+  list-style: none;
+  padding: 0 2px;
+}
+#features ul a li:hover {
+  background-color: #1ebba3;
+  color: white;
+}
+
+#clients h1 {
+  color: #1ebba3;
+  letter-spacing: 5px;
+}
+#clients p {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+#package {
+  padding: 2rem;
+}
+#package h1 {
+  color: #1ebba3;
+  letter-spacing: 5px;
+}
+#package p {
+  margin-top: 1em;
+  font-size: 1.1em;
+}
+
+#contact a.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+#contact a.navbar-brand span {
+  border: 2px solid #1ebba3;
+  padding: 0 5px 1px 5px;
+  background-color: transparent;
+  border-radius: 3px;
+  color: #1ebba3;
 }
 
 /*# sourceMappingURL=main.css.map */
