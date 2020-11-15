@@ -24,7 +24,7 @@
               <a class="nav-link" href="#register">Register</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
+              <a class="nav-link" href="#facilities">Facilities</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#package">Package</a>
@@ -55,27 +55,25 @@
         <div class="col">
           <h1 class="text-center">Register</h1>
           <p class="text-center">Register yourself now, it's free.</p>
+        </div>
+      </div>
+      <div class="row mt-3 align-items-center">
+        <div class="col-md-5">
+          <img src="https://images.pexels.com/photos/4944957/pexels-photo-4944957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=&w=210" alt="">
+        </div>
+        <div class="col-md">
           <form>
-            <div class="form-row">
-              <div class="form-group col-md-4">
-                <label for="fullname">Full Name</label>
-                <input type="name" name="fullname" class="form-control" minlength="4" required>
-              </div>
-              <div class="form-group col-md-4">
-                <label for="gender">Gender</label>
-                <select name="gender" class="form-control" required>
-                  <option value="" selected disabled>Choose...</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-              </div>
-              <div class="form-group col-md-4">
-                <label for="email">Email</label>
+            <div class="form-group">
+              <label for="fullname">Full Name</label>
+              <input type="name" name="fullname" class="form-control" minlength="4" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
                 <input type="email" name="email" class="form-control" required>
-              </div>
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <div class="form-group form-check">
-              <input type="checkbox" class="form-check-input">
+              <input type="checkbox" class="form-check-input" required>
               <label class="form-check-label" for="check">All data is correct.</label>
             </div>
             <button type="submit" class="btn-primary-color">Submit</button>
@@ -84,51 +82,114 @@
       </div>
     </div>
   </div>
-  <div id="features" class="offset">
-    <div class="container-fluid bg-light py-5">
-      <div class="row justify-content-center">
-        <div class="col-auto text-center">
-          <h1>Features</h1>
-          <p>We have the most complete gym facilities.</p>
+  <div id="facilities" class="offset">
+    <div class="bg-light py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-auto text-center mb-n4">
+            <h1>Facilities</h1>
+            <p>We have the most complete gym facilities.</p>
+          </div>
         </div>
-      </div>
-      <div class="row justify-content-lg-center">
-        <div class="col-lg-2 text-lg-right">
-          <ul>
-            <a href=""><li>Beverage</li></a>
-            <a href=""><li>Changing Rooms</li></a>
-            <a href=""><li>Cycling</li></a>
-            <a href=""><li>Music</li></a>
-            <a href=""><li>Group Fitness</li></a>
-            <a href=""><li>Lockers</li></a>
-            <a href=""><li>Lounge Area</li></a>
-            <a href=""><li>Tatsujin Area</li></a>
-            <a href=""><li>Water Dispenser</li></a>
-          </ul>
-        </div>
-        <div class="col-lg-2 text-lg-left">
-          <ul>
-            <a href=""><li>Wifi</li></a>
-            <a href=""><li>Steam Room</li></a>
-            <a href=""><li>Cardio Area</li></a>
-            <a href=""><li>Free Weights Area</li></a>
-            <a href=""><li>Hot Yoga</li></a>
-            <a href=""><li>Pilates</li></a>
-            <a href=""><li>Playground</li></a>
-            <a href=""><li>Purmotion</li></a>
-            <a href=""><li>Sauna</li></a>
-          </ul>
+        <div class="row simbol">
+          <div class="col-6 mx-auto d-flex justify-content-center flex-wrap">
+            <div class="col text-center">
+              <i class="fa fa-address-card-o fa-3x" aria-hidden="true"></i>
+              <p>ID Card</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-music fa-3x" aria-hidden="true"></i>
+              <p>Music</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-umbrella fa-3x" aria-hidden="true"></i>
+              <p>umbrella</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-wifi fa-3x" aria-hidden="true"></i>
+              <p>wifi</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-trash-o fa-3x" aria-hidden="true"></i>
+              <p>trash</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-motorcycle fa-3x" aria-hidden="true"></i>
+              <p>parking</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-cutlery fa-3x" aria-hidden="true"></i>
+              <p>canteen</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-plug fa-3x" aria-hidden="true"></i>
+              <p>plug</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-medkit fa-3x" aria-hidden="true"></i>
+              <p>medkit</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-television fa-3x" aria-hidden="true"></i>
+              <p>television</p>
+            </div>
+            <div class="col text-center">
+              <i class="fa fa-bath fa-3x" aria-hidden="true"></i>
+              <p>toilet</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <div id="package" class="offset">
-    <div class="container py-5">
-      <div class="row justify-content-center">
-        <div class="col-auto text-center">
-          <h1>Package</h1>
-          <p>We have the best offer for those of you who want to join us.</p>
+    <div class="fixed-background">
+      <div class="container py-5">
+        <div class="row justify-content-center">
+          <div class="col-auto text-center">
+            <h1>Package</h1>
+            <p class="desc">We have the best offer for those of you who want to join us.</p>
+          </div>
         </div>
+        <div class="row mt-4">
+          <div class="col">
+            <div class="card-deck">
+              <div class="card">
+                <img src="https://images.pexels.com/photos/3757376/pexels-photo-3757376.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Silver Member</h5>
+                  <p class="card-text">You can only practice 3 times a week, and you can't practice on Saturdays and Sundays.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">USD $10/month</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://images.pexels.com/photos/4047156/pexels-photo-4047156.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Gold Member</h5>
+                  <p class="card-text">You can only train 5 times a week, and you can't train on Sundays.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">USD $13/month</small>
+                </div>
+              </div>
+              <div class="card">
+                <img src="https://images.pexels.com/photos/3838937/pexels-photo-3838937.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Platinum Member</h5>
+                  <p class="card-text">You can practice whenever you want without any practice restrictions.</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">USD $15/month</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fixed-wrap">
+        <div class="fixed"></div>
       </div>
     </div>
   </div>
@@ -137,7 +198,7 @@
       <div class="row justify-content-center">
         <div class="col-auto text-center">
           <h1>Clients</h1>
-          <p>We have trusted clients for about 5 years.</p>
+          <p>We have trusted clients for about 2 years.</p>
         </div>
       </div>
       <div class="row">
