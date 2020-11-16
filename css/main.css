@@ -24,12 +24,15 @@ nav.navbar a.navbar-brand span {
   border-radius: 3px;
   color: #1ebba3;
 }
-nav.navbar #navbarResponsive ul a.nav-link {
+nav.navbar #navbarResponsive ul li {
+  margin-left: 1.5rem;
+}
+nav.navbar #navbarResponsive ul li a.nav-link {
   font-size: 14px;
   color: white;
   font-weight: 500;
 }
-nav.navbar #navbarResponsive ul a.nav-link.active, nav.navbar #navbarResponsive ul a.nav-link:hover {
+nav.navbar #navbarResponsive ul li a.nav-link.active, nav.navbar #navbarResponsive ul li a.nav-link:hover {
   color: #1ebba3;
 }
 
@@ -116,6 +119,9 @@ nav.navbar #navbarResponsive ul a.nav-link.active, nav.navbar #navbarResponsive 
 #register .btn-primary-color:hover {
   opacity: 1;
 }
+#register img {
+  width: 100%;
+}
 
 #facilities h1 {
   color: #1ebba3;
@@ -125,12 +131,29 @@ nav.navbar #navbarResponsive ul a.nav-link.active, nav.navbar #navbarResponsive 
   margin-top: 1em;
   font-size: 1.1em;
 }
-#facilities .simbol .fa {
-  color: #1ebba3;
-  opacity: 0.8;
+#facilities .simbol .text-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#facilities .simbol .text-center .border-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgba(30, 187, 163, 0.4);
+  border-radius: 50%;
+  overflow: hidden;
+  width: 4em;
+  height: 4em;
+  align-self: center;
   margin-top: 1em;
 }
-#facilities .simbol p {
+#facilities .simbol .text-center .border-icon .fa {
+  color: #1ebba3;
+  opacity: unset;
+  font-size: 2rem;
+}
+#facilities .simbol .text-center p {
   color: black;
   font-weight: 300;
   text-transform: capitalize;
@@ -183,45 +206,75 @@ nav.navbar #navbarResponsive ul a.nav-link.active, nav.navbar #navbarResponsive 
   filter: contrast(60%);
 }
 
-#clients h1 {
+#contact h1 {
   color: #1ebba3;
   letter-spacing: 5px;
 }
-#clients p {
+#contact p {
   margin-top: 1em;
   font-size: 1.1em;
 }
+#contact .mark-contact {
+  margin-left: 30%;
+  margin-top: 1.2em;
+  display: flex;
+  align-items: center;
+}
+#contact .mark-contact i.fa {
+  font-size: 2.2em;
+  color: #1ebba3;
+  opacity: 0.6;
+}
+#contact .mark-contact p {
+  margin: 0;
+  color: #747474;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
 
-#contact a.navbar-brand {
+#footer a.navbar-brand {
   font-size: 1.5em;
   font-weight: bold;
   color: white;
 }
-#contact a.navbar-brand span {
+#footer a.navbar-brand span {
   border: 2px solid #1ebba3;
   padding: 0 5px 1px 5px;
   background-color: transparent;
   border-radius: 3px;
   color: #1ebba3;
 }
+#footer p {
+  font-weight: 300;
+  color: white;
+  word-spacing: 3px;
+}
+#footer p a {
+  text-decoration: none;
+  font-weight: 400;
+  color: white;
+}
+#footer p a:hover {
+  color: #1ebba3;
+}
 
 @media (max-width: 1024px) {
-  #home nav.navbar .navbar-nav {
-    margin-right: 3em;
-  }
-
-  #register img {
-    width: 350px;
+  #home nav.navbar #navbarResponsive ul li {
+    margin-left: 5px;
   }
 }
 @media (max-width: 768px) {
-  #home nav.navbar .navbar-nav {
-    margin-right: 6em;
+  #home nav.navbar #navbarResponsive ul li {
+    margin-left: 0;
   }
-
-  #register img {
-    width: 280px;
-    height: 230px;
+  #home .caption h1 {
+    font-size: 2rem;
+  }
+  #home .caption h3 {
+    font-size: 1.2rem;
+  }
+  #home .caption .btn-light {
+    font-size: 1rem;
   }
 }
 
