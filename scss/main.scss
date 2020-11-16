@@ -12,12 +12,15 @@ nav.navbar {
     @include mixin.navbar-brand();
     #navbarResponsive {
         ul {
-            a.nav-link {
-                font-size: 14px;
-                color: white;
-                font-weight: 500;
-                &.active, &:hover {
-                    color: color.$primary-color;
+            li {
+                margin-left: 1.5rem;
+                a.nav-link {
+                    font-size: 14px;
+                    color: white;
+                    font-weight: 500;
+                    &.active, &:hover {
+                        color: color.$primary-color;
+                    }
                 }
             }
         }
@@ -103,22 +106,42 @@ nav.navbar {
             opacity: 1;
         }
     }
+    img {
+        width: 100%;
+    }
 }
 
 #facilities {
     @include mixin.title-desc();
     .simbol {
-        .fa {
-            color: color.$primary-color;
-            opacity: 0.8;
-            margin-top: 1em;
-        }
-        p {
-            color: black;
-            font-weight: 300;
-            text-transform: capitalize;
-            margin-top: 5px;
-            padding: 0;
+        .text-center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .border-icon {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 2px solid color.$primary-color4;
+                border-radius: 50%;
+                overflow: hidden;
+                width: 4em;
+                height: 4em;
+                align-self: center;
+                margin-top: 1em;
+                .fa {
+                    color: color.$primary-color;
+                    opacity: unset;
+                    font-size: 2rem;
+                }
+            }
+            p {
+                color: black;
+                font-weight: 300;
+                text-transform: capitalize;
+                margin-top: 5px;
+                padding: 0;
+            }
         }
     }
 }
@@ -160,26 +183,54 @@ nav.navbar {
     }
 }
 
-#clients {
+#contact {
     @include mixin.title-desc();
+    .mark-contact {
+        margin-left: 30%;
+        margin-top: 1.2em;
+        display: flex;
+        align-items: center;
+        i.fa {
+            font-size: 2.2em;
+            color: color.$primary-color;
+            opacity: 0.6;
+        }
+        p {
+            margin: 0;
+            color: rgb(116, 116, 116);
+            font-weight: 300;
+            letter-spacing: 1px;
+        }
+    }
 }
 
-#contact {
+#footer {
     @include mixin.navbar-brand();
+    p {
+        font-weight: 300;
+        color: white;
+        word-spacing: 3px;
+        a {
+            text-decoration: none;
+            font-weight: 400;
+            color: white;
+            &:hover {
+                color: color.$primary-color;
+            }
+        }
+    }
 }
 
 @media (max-width: 1024px) {
     #home {
         nav.navbar {
-            .navbar-nav {
-                margin-right: 3em;
+            #navbarResponsive {
+                ul {
+                    li {
+                        margin-left: 5px;
+                    }
+                }
             }
-        }
-    }
-
-    #register {
-        img {
-            width: 350px;
         }
     }
 }
@@ -187,16 +238,24 @@ nav.navbar {
 @media (max-width: 768px) {
     #home {
         nav.navbar {
-            .navbar-nav {
-                margin-right: 6em;
+            #navbarResponsive {
+                ul {
+                    li {
+                        margin-left: 0;
+                    }
+                }
             }
         }
-    }
-
-    #register {
-        img {
-            width: 280px;
-            height: 230px;
+        .caption {
+            h1 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1.2rem;
+            }
+            .btn-light {
+                font-size: 1rem;
+            }
         }
     }
 }
