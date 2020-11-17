@@ -186,20 +186,28 @@ nav.navbar {
 #contact {
     @include mixin.title-desc();
     .mark-contact {
-        margin-left: 30%;
+        margin-left: 35%;
         margin-top: 1.2em;
-        display: flex;
+        display: grid;
+        grid-template-areas: 'icon link';
+        grid-template-columns: 1fr 7fr;
         align-items: center;
-        i.fa {
-            font-size: 2.2em;
-            color: color.$primary-color;
-            opacity: 0.6;
+        .icon {
+            grid-area: icon;
+            i.fa {
+                font-size: 2.2em;
+                color: color.$primary-color;
+                opacity: 0.6;
+            }
         }
-        p {
-            margin: 0;
-            color: rgb(116, 116, 116);
-            font-weight: 300;
-            letter-spacing: 1px;
+        .link {
+            grid-area: link;
+            p {
+                margin: 0;
+                color: rgb(116, 116, 116);
+                font-weight: 300;
+                letter-spacing: 1px;
+            }
         }
     }
 }
@@ -256,6 +264,27 @@ nav.navbar {
             .btn-light {
                 font-size: 1rem;
             }
+        }
+    }
+
+    #footer {
+        .hidden-md {
+            display: none;
+        }
+        p {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    #contact {
+        @include mixin.title-desc();
+        .mark-contact {
+            margin-left: 0;
+            grid-template-areas: 'icon icon' 'link link';
+            text-align: center;
         }
     }
 }
