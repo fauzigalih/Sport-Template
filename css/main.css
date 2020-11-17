@@ -215,17 +215,25 @@ nav.navbar #navbarResponsive ul li a.nav-link.active, nav.navbar #navbarResponsi
   font-size: 1.1em;
 }
 #contact .mark-contact {
-  margin-left: 30%;
+  margin-left: 35%;
   margin-top: 1.2em;
-  display: flex;
+  display: grid;
+  grid-template-areas: "icon link";
+  grid-template-columns: 1fr 7fr;
   align-items: center;
 }
-#contact .mark-contact i.fa {
+#contact .mark-contact .icon {
+  grid-area: icon;
+}
+#contact .mark-contact .icon i.fa {
   font-size: 2.2em;
   color: #1ebba3;
   opacity: 0.6;
 }
-#contact .mark-contact p {
+#contact .mark-contact .link {
+  grid-area: link;
+}
+#contact .mark-contact .link p {
   margin: 0;
   color: #747474;
   font-weight: 300;
@@ -275,6 +283,29 @@ nav.navbar #navbarResponsive ul li a.nav-link.active, nav.navbar #navbarResponsi
   }
   #home .caption .btn-light {
     font-size: 1rem;
+  }
+
+  #footer .hidden-md {
+    display: none;
+  }
+  #footer p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 425px) {
+  #contact h1 {
+    color: #1ebba3;
+    letter-spacing: 5px;
+  }
+  #contact p {
+    margin-top: 1em;
+    font-size: 1.1em;
+  }
+  #contact .mark-contact {
+    margin-left: 0;
+    grid-template-areas: "icon icon" "link link";
+    text-align: center;
   }
 }
 
